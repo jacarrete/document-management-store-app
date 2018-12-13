@@ -25,6 +25,8 @@ locals {
 
   sharedAppServicePlan = "${var.shared_product}-${var.env}"
   sharedASPResourceGroup = "${var.shared_product}-shared-${var.env}"
+
+  testVariabe = "${var.product}-${var.component}"
 }
 
 module "app" {
