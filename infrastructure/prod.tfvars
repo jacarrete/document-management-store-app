@@ -51,4 +51,3 @@ blobstore_migrate_ccd_public_key_required = "true"
 // Addtional
 ////////////////////////////////////////////////
 max_file_size_in_mb = "500"
-
