@@ -117,4 +117,17 @@ Another long cpe again
         <gav regex="true">^.*slf4j.*$</gav>
         <cpe>cpe:/a:slf4j:slf4j:1.7.25</cpe>
     </suppress>
+    <suppress>
+        <notes>Temporarily suppress spring framework CVE see RDM-3809.  Will be
+            removed with RDM-3796 fixes land.</notes>
+        <gav regex="true">^org\.springframework:spring-.+:.*$</gav>
+        <cve>CVE-2018-15756</cve>
+    </suppress>
+    <suppress>
+        <notes>spring-boot-starter-batch 1.5.19 is using spring-batch
+            3.0.10 which fixes the issue.  We also don't use XML source,
+            trusted or not so are unimpacted.</notes>
+        <gav regex="true">^org\.springframework\.boot:spring-boot-starter-batch:.*$</gav>
+        <cve>CVE-2019-3774</cve>
+    </suppress>
 </suppressions>
