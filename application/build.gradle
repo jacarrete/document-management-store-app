@@ -51,13 +51,13 @@ tasks.withType(Test) {
 checkstyle {
     showViolations = true
     maxWarnings = 2
-    toolVersion = '8.12'
+    toolVersion = '8.18'
     // need to set configDir to rootDir otherwise submodule will use submodule/config/checkstyle
     configDir = new File(rootDir, 'config/checkstyle')
 }
 
 pmd {
-    toolVersion = "5.8.1"
+    toolVersion = "6.11.0"
     ignoreFailures = true
     sourceSets = [sourceSets.main, sourceSets.test]
     reportsDir = file("$project.buildDir/reports/pmd")
